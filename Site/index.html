@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Piece Wordle</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <h1>One Piece Wordle</h1>
 
     <div id="game">
-        
+        <div class="ligne-attribut">
+            <div id="img" class="case-character"></div>
+            <div id="name" class="case-attribut">Nom</div>
+            <div id="genre" class="case-attribut">Genre</div>
+            <div id="affiliation" class="case-attribut">Affiliation</div>
+            <div id="fruit" class="case-attribut">Fruit du démon</div>
+            <div id="haki" class="case-attribut">Haki</div>
+            <div id="prime" class="case-attribut">Dernière prime</div>
+            <div id="height" class="case-attribut">Taille</div>
+            <div id="origine" class="case-attribut">Origine</div>
+            <div id="first-arc" class="case-attribut">Première apparence</div>
+        </div>
+
+        <div class="ligne-proposition">
+            <div id="img" class="case-character"></div>
+            <div id="name" class="case-attribut">Luffy</div>
+            <div id="genre" class="case-attribut">Homme</div>
+            <div id="affiliation" class="case-attribut">Pirates au Chapeau de Paille</div>
+            <div id="fruit" class="case-attribut">Oui</div>
+            <div id="haki" class="case-attribut">Royal, Armement, Observation</div>
+            <div id="prime" class="case-attribut">3,000,000,000</div>
+            <div id="height" class="case-attribut">174cm</div>
+            <div id="origine" class="case-attribut">East Blue</div>
+            <div id="first-arc" class="case-attribut">Romance Dawn</div>
+        </div>
     </div>
 
-    <input type="text" id="guess-input">
-    <button type="submit" id="submit-guess">Submit</button>
+    <div class="submit">
+        <input type="text" id="guess-input">
+        <button type="submit" id="submit-guess">Submit</button>
+    </div>
 </body>
 </html>
