@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch('../Data/characters.json');
             const data = await response.json();
 
-            allChararacters = [...data.pirates_au_chapeau_de_paille, ...data.pirates_de_shanks];
+            allCharacters = Object.values(data).flat();
 
-            const randomIndex = Math.floor(Math.random() * allChararacters.length);
-            characterToGuess = allChararacters[randomIndex];
+            const randomIndex = Math.floor(Math.random() * allCharacters.length);
+            characterToGuess = allCharacters[randomIndex];
             
             console.log("Personnage à deviner :", characterToGuess.name);
 
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function handleGuess() {
-        const guessName = guessInput.ariaValueMax.trim();
+        const guessName = guessInput.value.trim();
 
         if (!guessName) {
             alert("Veuillez entrer un nom de personnage. ");
@@ -45,5 +45,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
         guessInput.value = "";
     }
-
 })

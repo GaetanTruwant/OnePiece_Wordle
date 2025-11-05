@@ -43,3 +43,25 @@
   object-fit: cover;
   border-radius: 5px;
 }
+
+/* Ajoute ces classes pour les couleurs de feedback */
+.case-attribut.correct {
+    background-color: #28a745; /* Vert */
+    color: white;
+}
+
+.case-attribut.incorrect {
+    background-color: #dc3545; /* Rouge */
+    color: white;
+}
+
+.case-attribut.partial {
+    background-color: #ffc107; /* Jaune */
+    color: #333;
+}
+
+/* Style pour les flèches */
+.arrow-up, .arrow-down {
+    font-size: 16px;
+    font-weight: bold;
+}
